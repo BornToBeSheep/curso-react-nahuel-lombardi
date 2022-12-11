@@ -6,13 +6,12 @@
 
   font-family: 'Teko', sans-serif;
 }
-.body__container{
-}
-.Navbar__container{
-
+img{
+  max-width: 20vw;
 }
 .navbar__logo{
-  width: 3vw;
+  width: 100px;
+  margin: 0px;
 }
 .cart__img{
   width: 4vw;
