@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget"
 const NavBar = () => {
     return (
-        <div className="container-fluid Navbar__container">
+        <div className="Navbar__container">
             <div className="row">
                 <div className="col">
                     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

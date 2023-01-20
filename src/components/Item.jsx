@@ -10,7 +10,6 @@ const Item = ({prod}) =>{
                     <img src={prod.img} className="card-img-top" alt={prod.name} />
                     <div className="card-body">
                         <h5 className="card-title">{prod.description}</h5>
-                        <p className="card-text"></p>
                     </div>
                 </div>
             </Link>

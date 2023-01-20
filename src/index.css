@@ -9,6 +9,10 @@
 img{
   max-width: 20vw;
 }
+.Navbar__container{
+  padding: 0px;
+  padding-right: 0px;
+}
 .navbar__logo{
   width: 100px;
   margin: 0px;

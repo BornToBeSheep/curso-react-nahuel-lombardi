@@ -1,28 +1,46 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState} from "react";
-import products from "../json/productsArray.json";
+//import products from "../json/productsArray.json";
 import {ItemList} from "./ItemList"
+//import { Item } from "./Item";
+import { collection, getDocs, getFirestore, query, where} from "firebase/firestore";
+import Loading from "./Loading";
 
 
 const ItemListContainer = () =>{
 
     const [listProducts, setListProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
     const {id} = useParams()
-    useEffect(()=>{
-        const promesa = new Promise((res, rej) =>{
-            setTimeout(() =>{
-                res(id ? products.filter(item => item.category == id): products);
-            }, 2000)
-        });
-        promesa.then((data)=>{
-            console.log(data)
-            setListProducts(data);
+
+/*      
+//proceso para cargar nuestra lista de productos en firebase
+    useEffect(() => {
+        const db = getFirestore();   
+        const itemCollection = collection(db, "products") 
+
+        products.forEach((item) => {
+            addDoc(itemCollection, item);
         })
-    }, [id])
-    
+    }, [])
+*/ 
+    useEffect (() => {
+        const db = getFirestore();   
+        const itemCollection = collection(db, "products");
+
+        const q = id ? query(itemCollection, where("category", "==", id)) : itemCollection
+
+        getDocs(q).then((snapshot) => {
+            setListProducts(snapshot.docs.map((doc) => ({
+                id:doc.id, ...doc.data()})
+            ))
+            setLoading(false);
+    })}, [id])
+
+
     return (
-        <div>
-            <ItemList listProducts={listProducts}/> 
+        <div >
+            {loading ? <Loading /> :<ItemList listProducts={listProducts}/> }
         </div>
     )
 }

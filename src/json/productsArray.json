@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "img": "../img/items/pirdsc.jpg",
         "name": "Sensor de movimiento DSC",
         "description": "Un potente detector interior de una marca reconocida por su tolerancia al fallo. Detecta la radiacion infrarroja a partir de los 25kg y con una distancia total de 15mts.",
@@ -9,7 +8,6 @@
         "category": "alarmas"
     },
     {
-        "id": 2,
         "img": "../img/items/Magnetico-precableado.jpg",
         "name": "Magnetico precableado",
         "description": "Utilizando los principios del magnetismo, este sensor nos ofrece la posibilidad de cubrir aberturas. Al estar sellado por dentro es de uso excusivo en baños y zonas humedas. Su diseño compacto permite instalarlos en los rieles de las aberturas de aluminio volviendolos invisibles",
@@ -18,7 +16,6 @@
         "category": "alarmas" 
     },
     {
-        "id": 4,
         "img": "../img/items/takex.jpg",
         "name": "Sensor de movimiento exterior",
         "description": "La joya de la corona, este potente sensor permite el control total de tus espacios abiertos. Con un alcance maximo de 13 mts cubre todo lo que se encuentre a 90°. Su sistema de doble deteccion permite discernir entre falsas alarmas y no detectar mascotas. Ideal para detectar intrusos antes que lleguen a tu casa",
@@ -27,7 +24,6 @@
         "category": "alarmas"
     },
     {
-        "id": 5,
         "img": "../img/items/camara.png",
         "name": "Camara mini-domo ",
         "description": "Camara mini-domo ideal para cubrir espacios de accesos como cocheras y pasillos. Su tecnologia permite la visualizacion nocturna del entorno",
@@ -36,7 +32,6 @@
         "category": "camaras"
     },
     {
-        "id": 6,
         "img": "../img/items/camara-bullet-premium.jpg",
         "name": "Camara bullet premium",
         "description": "Camara full hd 1080p cuenta con certificacion IP-66 lo que la hace ideal para cubrir en el exterior soportando lluvia y polvo",
@@ -44,11 +39,10 @@
         "stock": 10,
         "category": "camaras"
     },{
-        "id": 7,
         "img": "../img/items/camara-domo.png",
         "name": "Camara domo",
         "description": "Potente camara con mando a distancia",
-        "price": "",
+        "price": 12,
         "stock": 10,
         "category": "camaras"
     }
