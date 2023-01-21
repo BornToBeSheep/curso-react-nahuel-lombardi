@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "./context/CartContext"
-import { addDoc, collection, updateDoc , getFirestore, getDoc, doc } from "firebase/firestore";
+import { addDoc, collection, updateDoc , getFirestore, doc } from "firebase/firestore";
 
 const Checkout = () =>{
     const {cart, clear, toPay} = useContext(CartContext);
