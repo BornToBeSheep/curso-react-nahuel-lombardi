@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BornToBeSheep/curso-react-nahuel-lombardi/static/css/main.9b005bb2.css",
+    "main.js": "/BornToBeSheep/curso-react-nahuel-lombardi/static/js/main.b9edfd34.js",
+    "index.html": "/BornToBeSheep/curso-react-nahuel-lombardi/index.html",
+    "main.9b005bb2.css.map": "/BornToBeSheep/curso-react-nahuel-lombardi/static/css/main.9b005bb2.css.map",
+    "main.b9edfd34.js.map": "/BornToBeSheep/curso-react-nahuel-lombardi/static/js/main.b9edfd34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b005bb2.css",
+    "static/js/main.b9edfd34.js"
+  ]
+}
